@@ -1,0 +1,14 @@
+td {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #7b8087;
+  background: #fafafa;
+  cursor: pointer;
+  &.sell {
+    color: #37a17b;
+  }
+  &.buy {
+    color: #f85066;
+  }
+}

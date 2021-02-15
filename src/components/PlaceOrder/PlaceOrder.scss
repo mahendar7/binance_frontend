@@ -1,0 +1,94 @@
+.buyOrder {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 280px;
+  .BuyLimitOrMarket {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    span {
+      width: 100%;
+      margin-right: 10px;
+      cursor: pointer;
+      color: #969ea9;
+      font-size: 14px;
+      text-align: center;
+      &.currentOptionSelected {
+        border-bottom: 2px solid #f0b90b;
+        color: black;
+        font-weight: 600;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .buyHeading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .buyHeadingRight {
+      display: flex;
+      align-items: center;
+      color: #8f97a4;
+    }
+  }
+  .BuyPlaceOrder {
+    .tradeInput {
+      border: 2px solid #f3d982;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      padding: 4px 10px;
+      border-radius: 5px;
+      background-color: #f0f1f2;
+      span {
+        // color: #d6d9dd;
+        color: grey;
+      }
+    }
+    input {
+      outline: none;
+      border: none;
+      background-color: #f0f1f2;
+    }
+  }
+
+  .BuySliderArea {
+    .BuyRangeSlider {
+      color: #6d7a8b !important;
+    }
+    &:hover .currentRangeText {
+      visibility: visible;
+    }
+    .currentRangeText {
+      visibility: hidden;
+    }
+  }
+
+  .OrderBtn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    &:hover {
+      opacity: 0.9;
+    }
+    &.BuyBtn {
+      background-color: #2ed191;
+    }
+    &.SellBtn {
+      background-color: #ff4265;
+    }
+  }
+}

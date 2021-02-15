@@ -1,0 +1,24 @@
+.trade {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dashboard {
+  display: flex;
+  padding: 0 10px;
+  .dashBoardLeft {
+    flex: 0.6;
+    border-right: 1px solid #e6e8ea;
+  }
+  .dashBoardRight {
+    flex: 0.4;
+    & .top {
+      display: flex;
+      max-width: 600px;
+    }
+    & .bottom {
+      display: flex;
+      max-width: 600px;
+    }
+  }
+}

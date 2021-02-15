@@ -1,0 +1,128 @@
+.auth {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  min-width: 350px;
+  width: 100%;
+  border: 1px solid rgb(241, 240, 240);
+  padding: 20px 5px;
+  margin: auto;
+  margin-top: 80px;
+  box-shadow: 0 0 2px 1px rgb(248, 245, 245);
+  .authTitleCreate {
+    font-size: 20px;
+    color: #1e2026;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .authTitleWelcome {
+    font-size: 12px;
+    color: #747a81;
+    font-weight: 400;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    text-align: center;
+  }
+  .form {
+    width: 90%;
+    .inputWrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 8px;
+      &:first-child {
+        margin-top: 20px;
+      }
+      label {
+        margin-bottom: 2px;
+        display: flex;
+        align-items: center;
+        color: #474d57;
+        font-size: 13px;
+        &.clickable {
+          cursor: pointer;
+          .dropdownIcon {
+            margin-top: 3px;
+          }
+        }
+      }
+      input {
+        padding: 10px;
+        outline: none;
+        border: 1px solid lightgray;
+        background-color: white;
+        border-radius: 2px;
+        &:hover {
+          border-color: #f7dc85;
+        }
+      }
+    }
+    .AuthBtn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      margin: 10px 0;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      background-color: #f8d12f;
+      color: black;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+    .error,
+    .terms {
+      display: block;
+      margin: 10px 0;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    .terms {
+      color: #474d57;
+    }
+    .error {
+      color: #d9304e;
+    }
+    .alreadyReg {
+      text-align: center;
+      display: block;
+      margin: 10px 0;
+      font-size: 12px;
+      // color: #747a81;
+      font-weight: 400;
+      span {
+        color: rgb(208, 152, 11);
+        cursor: pointer;
+        font-weight: 600;
+        &:hover {
+          opacity: 0.9;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .regHelper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      .forgotPassword {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.authMain {
+  background-color: #fafafa;
+  height: 100vh;
+  width: 100%;
+}

@@ -1,0 +1,73 @@
+.currentOrders {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 300px;
+  .opt {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+
+    & .left {
+      .option-item {
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 3px 5px;
+        &.red {
+          color: red;
+        }
+        &.green {
+          color: green;
+        }
+        &.selected {
+          background: #e6e8ea;
+        }
+      }
+    }
+
+    & .right {
+      select {
+        padding: 3px 10px;
+        outline: none;
+        cursor: pointer;
+        background: #e6e8ea;
+      }
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  .currentOrdersTable {
+    table {
+      width: 100%;
+      // max-width: 300px;
+      th {
+        color: #626364;
+        padding-bottom: 8px;
+        background-color: #fafafa;
+        font-size: 11px;
+        font-weight: 600;
+        text-align: left;
+      }
+      th,
+      td {
+        background-color: #fafafa;
+      }
+      tr.currentPrice {
+        td {
+          font-size: 16px;
+          &.moreOption {
+            display: flex;
+            align-items: center;
+          }
+          & .signalIcon {
+            color: green;
+          }
+        }
+      }
+    }
+  }
+}
